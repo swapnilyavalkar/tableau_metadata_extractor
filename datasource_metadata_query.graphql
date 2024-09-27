@@ -1,0 +1,39 @@
+query publishedDatasources {
+  publishedDatasources(filter: {idWithin: ["abc"]}) {
+    name
+    projectName
+    owner {
+      username
+    }
+    fields {
+      name
+      __typename
+      ... on ColumnField {
+        dataType
+        role
+      }
+      ... on CalculatedField {
+        formula
+        dataType
+        role
+      }
+      isHidden
+      folderName
+    }
+    datasourceFilters {
+      field {
+        name
+      }
+    }
+    upstreamTables {
+      name
+      schema
+      fullName
+      connectionType
+      database {
+        name
+        __typename
+      }
+    }
+  }
+}

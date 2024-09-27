@@ -1,0 +1,17 @@
+query publishedWorkbooks {
+  workbooks(filter: {name: "abc", projectName: "abc"}) {
+    name
+    projectName
+    sheets {
+      name
+      datasourceFields {
+        name
+        __typename
+        ... on CalculatedField {
+          formula
+        }
+      }
+    }
+  }
+
+}
