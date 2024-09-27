@@ -3,9 +3,9 @@
 This repository contains a set of Python scripts designed to extract metadata from Tableau workbooks and data sources. The scripts use the Tableau GraphQL API to retrieve detailed information from Tableau Server, including workbooks, data sources, tables, and other related metadata.
 
 ### Files:
-1. **Code 1**: `tableau_metadata_db_extractor.py`
-2. **Code 2**: `tableau_metadata_basic_extractor.py`
-3. **Code 3**: `tableau_metadata_detailed_extractor.py`
+1. **File 1**: `tableau_metadata_db_extractor.py`
+2. **File 2**: `tableau_metadata_basic_extractor.py`
+3. **File 3**: `tableau_metadata_detailed_extractor.py`
 
 ## Features
 
